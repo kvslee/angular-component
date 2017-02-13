@@ -1,6 +1,7 @@
 {
   "name": "angular-quickstart",
   "version": "1.0.0",
+  "private": true,
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "build": "tsc -p src/",

@@ -13,6 +13,7 @@ import {WidgetThreeComponent} from "../widget/widget-three.component";
 `],
     template: `
 <div>Home Component</div>
+
 <div>{{simpleService.message}}</div>
 
 <widget-one [messageTwo]="simpleService.messageTwo"></widget-one>
@@ -45,7 +46,7 @@ Raw stuffs (everything not selected)
 export class HomeComponent {
     @ViewChild('container', {read: ViewContainerRef}) container: any;
     @ViewChild('template') template: any;
-    widgetRef;
+    widgetRef: any;
 
     constructor(
         private resolver: ComponentFactoryResolver,
